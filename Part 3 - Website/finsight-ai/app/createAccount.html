@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSight AI - Log In / Sign Up</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="icon" type="image/x-icon" href="../images/finsight-logo-circle.png">
+</head>
+
+<body>
+  <div class="auth-container">
+    <h1 class="glow-title">FinSight AI</h1>
+    <p class="tagline">Smarter money, powered by AI.</p>
+
+    <div class="auth-box fade-in">
+      <div class="tabs">
+        <button class="tab-button active js-login-button">Log In</button>
+        <button class="tab-button js-signup-button">Sign Up</button>
+      </div>
+
+      <!-- SIGN UP FORM -->
+      <form id="signup" class="form">
+        <h2>Join the Future of Finance</h2>
+        <input type="text" id="signup-name" placeholder="Full Name" required />
+        <input type="text" id="signup-initials" placeholder="Initials (e.g. JD)" maxlength="5" required />
+        <input type="password" id="signup-pin" placeholder="4-digit PIN" maxlength="4" required />
+        <button type="button" class="neon-button js-handle-sign-up">
+          Sign Up
+        </button>
+        <p class="note">
+          Already have an account?
+          <a href="#">Log in</a>
+        </p>
+      </form>
+
+      <!-- LOGIN FORM -->
+      <form id="login" class="form active">
+        <h2>Welcome Back</h2>
+        <input type="text" id="login-initials" placeholder="Initials" required />
+        <input type="password" id="login-pin" placeholder="PIN" maxlength="4" required />
+        <button class="neon-button js-login" type="button" class="neon-button">
+          Log In
+        </button>
+        <p class="note">Forgot your PIN? <a href="#">Reset here</a></p>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="js/accounts.js"></script>
+  <script></script>
+</body>
+
+</html>
